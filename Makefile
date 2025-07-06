@@ -6,8 +6,7 @@ SIM             = verilator
 TOPLEVEL        = fifo
 MODULE          = test_fifo
 
-# THIS LINEPOINTS Verilator AT YOUR RTL!
-VERILOG_SOURCES = fifo.v
+VERILOG_SOURCES = fifo.sv
 
 # Bring in cocotb’s standard Verilator rules
 include $(shell cocotb-config --makefiles)/Makefile.sim
